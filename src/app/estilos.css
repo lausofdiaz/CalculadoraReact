@@ -1,0 +1,108 @@
+
+.titulo{
+    text-align: center;
+}
+
+/*secciones*/
+.calculadora{
+    border: 1px solid #000; /* Añade un borde de 2px de ancho y color negro */
+    padding: 20px; /* Agrega espacio interno alrededor del contenido */
+    width: 500px; /* Define el ancho del div principal */
+    height: 400px;
+    margin: 0 auto; /* Centra el div horizontalmente en el contenedor padre */
+    position: absolute; /* Establece la posición como absoluta */
+    top: 50%; /* Lleva el borde superior al 50% de la pantalla */
+    left: 50%; /* Lleva el borde izquierdo al 50% de la pantalla */
+    transform: translate(-50%, -50%); /* Centra el div horizontal y verticalmente */
+    display: grid;
+    grid-template-areas: "pantalla pantalla" 
+    "numeros operacion";
+    gap: 40px;
+}
+
+.pantalla{
+    border: 1px solid #000; /* Añade un borde de 2px de ancho y color negro */
+    grid-area: pantalla;
+    background-color: white;
+}
+.numeros{
+    grid-area: numeros;
+}
+.operacion{
+    grid-area: operacion;
+}
+
+/*sección de números*/
+.numeros{
+    display: grid;
+    grid-template-areas: "siete ocho nueve" 
+    "cuatro cinco seis"
+    "uno dos tres"
+    "cero cero cero ";
+    gap: 5px;
+}
+.siete{
+    grid-area: siete;  
+}
+.ocho{
+    grid-area: ocho;  
+}
+.nueve{
+    grid-area: nueve;  
+}
+.cuatro{
+    grid-area: cuatro;  
+}
+.cinco{
+    grid-area: cinco;  
+}
+.seis{
+    grid-area: seis;  
+}
+.uno{
+    grid-area: uno;  
+}
+.dos{
+    grid-area: dos;  
+}
+.tres{
+    grid-area: tres;  
+}
+.cero{
+    grid-area: cero;  
+}
+
+
+/*sección de operaciones*/
+.operacion{
+    display: grid;
+    grid-template-areas: "c" 
+    "porcentaje"
+    "mas"
+    "menos"
+    "division"
+    "multiplicacion"
+    "igual";
+    gap: 5px;
+}
+.c{
+    grid-area: c;  
+}
+.porcentaje{
+    grid-area: porcentaje;  
+}
+.mas{
+    grid-area: mas;  
+}
+.menos{
+    grid-area: menos;  
+}
+.division{
+    grid-area: division;  
+}
+.multiplicacion{
+    grid-area: multiplicacion;  
+}
+.igual{
+    grid-area: igual;  
+}

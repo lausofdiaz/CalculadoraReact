@@ -1,7 +1,9 @@
-import Image from 'next/image'
+/*import Image from 'next/image'
 import styles from './page.module.css'
 "use client";
 import { useState } from 'react';
+
+
 
 function Mensaje({texto}: any){
   return(
@@ -66,3 +68,4 @@ const numeros:Array<number> = [
     </section>
   )
 }
+*/
