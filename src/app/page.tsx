@@ -10,12 +10,13 @@ export default function App() {
   }
   
   const calcular = ()=>{
-    setValor(eval(valor).toString());
+    setValor(valor+' = '+(eval(valor).toString()));
   }
 
   
   return (
     <section>
+      
       <div  className="calculadora">
       <div className="pantalla">
       {valor}
